@@ -1,0 +1,24 @@
+{  
+     "name": "chess-project",
+    "version": "1.0.0",
+    
+    "main": "server.js",   "scripts": {
+        "start": "node server.js",
+        "dev": "node server.js"
+    },
+    "engines": {
+        "node": "18.x"
+ 
+    },
+    "dependencies": {
+        "chess.js": "^1.4.0",
+        "chessboardjs": "^0.0.1",
+        "express": "^4.18.2",
+        "socket.io": "^4.7.2"
+    }
+}
+
+
+
+
+
