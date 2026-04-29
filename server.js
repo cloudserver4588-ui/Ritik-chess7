@@ -39,7 +39,7 @@ io.on('connection', (socket) => {
         const match = matches.find(m => m.id === data.matchId);
         if (!match) return;
         match.fen = data.fen;
-        socket.to(data.matchId).emit('move', data);
+        io.to(data.matchId).emit('move', data);
     });
 });
 
@@ -51,9 +51,3 @@ const PORT = process.env.PORT || 3000;
 server.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on http://localhost:${PORT}/`);
 });
-
-
-
-
-
-
